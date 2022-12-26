@@ -11,8 +11,7 @@ It is very easy to use.  Implement IRecurrence in any of your class, create an i
 The project includes tests that will tell you how to use the calculator.
 There is now support for default recurrence class and recurrence fluent API builder
 
-<pre><code class='language-cs'>
-
+```csharp
 private Calculator calendarUtility;
 private readonly DateTime startDate = new DateTime(2014, 1, 31, 16, 0, 0);
 
@@ -52,7 +51,7 @@ public void Should_Generate_Weekly_Recurrences_Without_End_Date()
     Assert.AreEqual(new DateTime(2014, 2, 27).Add(startDate.TimeOfDay), occurrences[3], "Date 4 should be correct");
     Assert.AreEqual(new DateTime(2014, 3, 11).Add(startDate.TimeOfDay), occurrences[4], "Date 5 should be correct");
 }
-</code></pre>
+```
 
 You can also use NuGet to install the package: https://www.nuget.org/packages/RecurrenceCalculator/
 Just type Install-Package RecurrenceCalculator in package manager console window.
